@@ -1,5 +1,5 @@
 # nr
-An interactive webmap of Narrow Ridge Center (nr) and land trusts in 2025, as a bird's-eye orientation to the landscape (not for navigation). It's based on [this QGIS project](https://github.com/pmgreen/narrowridge) and was generated using the [qgis2Web plugin](https://plugins.qgis.org/plugins/qgis2web/).
+An interactive webmap of Narrow Ridge Center (nr) and land trusts in 2025, as a bird's-eye orientation to the landscape (not for navigation). It's based on [this QGIS project](https://github.com/pmgreen/narrowridge) and was generated using the [qgis2web plugin](https://plugins.qgis.org/plugins/qgis2web/).
 
 (click to open)
 
