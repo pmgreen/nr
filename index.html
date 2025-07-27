@@ -81,7 +81,7 @@
         }
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[36.305097764763765,-83.66021484637805],[36.31344352801251,-83.64500507326845]]);
+        }).fitBounds([[36.29651498596005,-83.67833319332229],[36.33470012305973,-83.60873686232958]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -972,6 +972,12 @@
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['name'] !== null ? autolinker.link(String(feature.properties['name']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td class="visible-with-data" id="pictureFolder" colspan="2"><strong>pictureFolder</strong><br />' + (feature.properties['pictureFolder'] !== null ? autolinker.link(String(feature.properties['pictureFolder']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td class="visible-with-data" id="created" colspan="2"><strong>created</strong><br />' + (feature.properties['created'] !== null ? autolinker.link(String(feature.properties['created']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
