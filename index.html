@@ -45,27 +45,26 @@
         <script src="data/grainger_8.js"></script>
         <script src="data/loghouse_9.js"></script>
         <script src="data/nrparcels_10.js"></script>
-        <script src="data/gardeninterntrail_11.js"></script>
-        <script src="data/upperpilottrail_12.js"></script>
-        <script src="data/outandback_13.js"></script>
+        <script src="data/garden_intern_trail_11.js"></script>
+        <script src="data/upper_pilot_trail_12.js"></script>
+        <script src="data/out_and_back_13.js"></script>
         <script src="data/lower_pilot_trail_14.js"></script>
-        <script src="data/sblnewharvesttrail_15.js"></script>
-        <script src="data/blackfoxredtraileast_16.js"></script>
-        <script src="data/blackfoxloop_17.js"></script>
-        <script src="data/blackfoxgreentrail_18.js"></script>
-        <script src="data/blackfoxredtrail_19.js"></script>
-        <script src="data/visionfasttrail_20.js"></script>
-        <script src="data/blackfoxloopexit_21.js"></script>
-        <script src="data/out_and_back_trail_22.js"></script>
-        <script src="data/chestnuttrees_23.js"></script>
-        <script src="data/pollinatorfield_24.js"></script>
-        <script src="data/lower_25.js"></script>
-        <script src="data/upper_26.js"></script>
-        <script src="data/pointsofinterest_27.js"></script>
-        <script src="data/teaching_garden_28.js"></script>
-        <script src="data/buildings_29.js"></script>
-        <script src="data/roads_30.js"></script>
-        <script src="data/parking_31.js"></script>
+        <script src="data/sbl_new_harvest_trail_15.js"></script>
+        <script src="data/blackfox_red_trail_east_16.js"></script>
+        <script src="data/blackfox_loop_17.js"></script>
+        <script src="data/blackfox_green_trail_18.js"></script>
+        <script src="data/blackfox_red_trail_19.js"></script>
+        <script src="data/vision_fast_trail_20.js"></script>
+        <script src="data/blackfox_loop_exit_21.js"></script>
+        <script src="data/chestnuttrees_22.js"></script>
+        <script src="data/pollinatorfield_23.js"></script>
+        <script src="data/lower_24.js"></script>
+        <script src="data/upper_25.js"></script>
+        <script src="data/pointsofinterest_26.js"></script>
+        <script src="data/teaching_garden_27.js"></script>
+        <script src="data/buildings_28.js"></script>
+        <script src="data/roads_29.js"></script>
+        <script src="data/parking_30.js"></script>
         <script>
         var highlightLayer;
         function highlightFeature(e) {
@@ -84,8 +83,8 @@
             highlightLayer.openPopup();
         }
         var map = L.map('map', {
-            zoomControl:false, maxZoom:18, minZoom:4
-        }).fitBounds([[36.29645747788185,-83.6831509358742],[36.32957378613792,-83.6264095295539]]);
+            zoomControl:false, maxZoom:20, minZoom:4
+        }).fitBounds([[36.29522956654015,-83.68011692308274],[36.33250947598937,-83.61624091194882]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -198,7 +197,7 @@
             opacity: 0.6,
             attribution: '',
             minZoom: 4,
-            maxZoom: 18,
+            maxZoom: 20,
             minNativeZoom: 0,
             maxNativeZoom: 19
         });
@@ -211,7 +210,7 @@
             opacity: 0.3,
             attribution: '',
             minZoom: 4,
-            maxZoom: 18,
+            maxZoom: 20,
             minNativeZoom: 0,
             maxNativeZoom: 19
         });
@@ -224,7 +223,7 @@
             opacity: 0.5,
             attribution: '<a href="https://caltopo.com">© Caltopo</a>',
             minZoom: 4,
-            maxZoom: 18,
+            maxZoom: 20,
             minNativeZoom: 0,
             maxNativeZoom: 16
         });
@@ -644,7 +643,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(133,182,111,1.0)',
+                fillColor: 'rgba(141,90,153,1.0)',
                 interactive: false,
             }
         }
@@ -809,7 +808,7 @@
         });
         bounds_group.addLayer(layer_nrparcels_10);
         map.addLayer(layer_nrparcels_10);
-        function pop_gardeninterntrail_11(feature, layer) {
+        function pop_garden_intern_trail_11(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -836,9 +835,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_gardeninterntrail_11_0() {
+        function style_garden_intern_trail_11_0() {
             return {
-                pane: 'pane_gardeninterntrail_11',
+                pane: 'pane_garden_intern_trail_11',
                 opacity: 1,
                 color: 'rgba(236,90,209,1.0)',
                 dashArray: '2.0,4.0',
@@ -849,21 +848,21 @@
                 interactive: false,
             }
         }
-        map.createPane('pane_gardeninterntrail_11');
-        map.getPane('pane_gardeninterntrail_11').style.zIndex = 411;
-        map.getPane('pane_gardeninterntrail_11').style['mix-blend-mode'] = 'normal';
-        var layer_gardeninterntrail_11 = new L.geoJson(json_gardeninterntrail_11, {
+        map.createPane('pane_garden_intern_trail_11');
+        map.getPane('pane_garden_intern_trail_11').style.zIndex = 411;
+        map.getPane('pane_garden_intern_trail_11').style['mix-blend-mode'] = 'normal';
+        var layer_garden_intern_trail_11 = new L.geoJson(json_garden_intern_trail_11, {
             attribution: '',
             interactive: false,
-            dataVar: 'json_gardeninterntrail_11',
-            layerName: 'layer_gardeninterntrail_11',
-            pane: 'pane_gardeninterntrail_11',
-            onEachFeature: pop_gardeninterntrail_11,
-            style: style_gardeninterntrail_11_0,
+            dataVar: 'json_garden_intern_trail_11',
+            layerName: 'layer_garden_intern_trail_11',
+            pane: 'pane_garden_intern_trail_11',
+            onEachFeature: pop_garden_intern_trail_11,
+            style: style_garden_intern_trail_11_0,
         });
-        bounds_group.addLayer(layer_gardeninterntrail_11);
-        map.addLayer(layer_gardeninterntrail_11);
-        function pop_upperpilottrail_12(feature, layer) {
+        bounds_group.addLayer(layer_garden_intern_trail_11);
+        map.addLayer(layer_garden_intern_trail_11);
+        function pop_upper_pilot_trail_12(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -893,9 +892,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_upperpilottrail_12_0() {
+        function style_upper_pilot_trail_12_0() {
             return {
-                pane: 'pane_upperpilottrail_12',
+                pane: 'pane_upper_pilot_trail_12',
                 opacity: 1,
                 color: 'rgba(251,154,153,1.0)',
                 dashArray: '2.0,4.0',
@@ -906,21 +905,21 @@
                 interactive: false,
             }
         }
-        map.createPane('pane_upperpilottrail_12');
-        map.getPane('pane_upperpilottrail_12').style.zIndex = 412;
-        map.getPane('pane_upperpilottrail_12').style['mix-blend-mode'] = 'normal';
-        var layer_upperpilottrail_12 = new L.geoJson(json_upperpilottrail_12, {
+        map.createPane('pane_upper_pilot_trail_12');
+        map.getPane('pane_upper_pilot_trail_12').style.zIndex = 412;
+        map.getPane('pane_upper_pilot_trail_12').style['mix-blend-mode'] = 'normal';
+        var layer_upper_pilot_trail_12 = new L.geoJson(json_upper_pilot_trail_12, {
             attribution: '',
             interactive: false,
-            dataVar: 'json_upperpilottrail_12',
-            layerName: 'layer_upperpilottrail_12',
-            pane: 'pane_upperpilottrail_12',
-            onEachFeature: pop_upperpilottrail_12,
-            style: style_upperpilottrail_12_0,
+            dataVar: 'json_upper_pilot_trail_12',
+            layerName: 'layer_upper_pilot_trail_12',
+            pane: 'pane_upper_pilot_trail_12',
+            onEachFeature: pop_upper_pilot_trail_12,
+            style: style_upper_pilot_trail_12_0,
         });
-        bounds_group.addLayer(layer_upperpilottrail_12);
-        map.addLayer(layer_upperpilottrail_12);
-        function pop_outandback_13(feature, layer) {
+        bounds_group.addLayer(layer_upper_pilot_trail_12);
+        map.addLayer(layer_upper_pilot_trail_12);
+        function pop_out_and_back_13(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -950,9 +949,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_outandback_13_0() {
+        function style_out_and_back_13_0() {
             return {
-                pane: 'pane_outandback_13',
+                pane: 'pane_out_and_back_13',
                 opacity: 1,
                 color: 'rgba(236,90,209,1.0)',
                 dashArray: '2.0,4.0',
@@ -963,20 +962,20 @@
                 interactive: false,
             }
         }
-        map.createPane('pane_outandback_13');
-        map.getPane('pane_outandback_13').style.zIndex = 413;
-        map.getPane('pane_outandback_13').style['mix-blend-mode'] = 'normal';
-        var layer_outandback_13 = new L.geoJson(json_outandback_13, {
+        map.createPane('pane_out_and_back_13');
+        map.getPane('pane_out_and_back_13').style.zIndex = 413;
+        map.getPane('pane_out_and_back_13').style['mix-blend-mode'] = 'normal';
+        var layer_out_and_back_13 = new L.geoJson(json_out_and_back_13, {
             attribution: '',
             interactive: false,
-            dataVar: 'json_outandback_13',
-            layerName: 'layer_outandback_13',
-            pane: 'pane_outandback_13',
-            onEachFeature: pop_outandback_13,
-            style: style_outandback_13_0,
+            dataVar: 'json_out_and_back_13',
+            layerName: 'layer_out_and_back_13',
+            pane: 'pane_out_and_back_13',
+            onEachFeature: pop_out_and_back_13,
+            style: style_out_and_back_13_0,
         });
-        bounds_group.addLayer(layer_outandback_13);
-        map.addLayer(layer_outandback_13);
+        bounds_group.addLayer(layer_out_and_back_13);
+        map.addLayer(layer_out_and_back_13);
         function pop_lower_pilot_trail_14(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -1034,7 +1033,7 @@
         });
         bounds_group.addLayer(layer_lower_pilot_trail_14);
         map.addLayer(layer_lower_pilot_trail_14);
-        function pop_sblnewharvesttrail_15(feature, layer) {
+        function pop_sbl_new_harvest_trail_15(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -1064,9 +1063,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_sblnewharvesttrail_15_0() {
+        function style_sbl_new_harvest_trail_15_0() {
             return {
-                pane: 'pane_sblnewharvesttrail_15',
+                pane: 'pane_sbl_new_harvest_trail_15',
                 opacity: 1,
                 color: 'rgba(199,60,46,1.0)',
                 dashArray: '8.0,4.0',
@@ -1077,21 +1076,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_sblnewharvesttrail_15');
-        map.getPane('pane_sblnewharvesttrail_15').style.zIndex = 415;
-        map.getPane('pane_sblnewharvesttrail_15').style['mix-blend-mode'] = 'normal';
-        var layer_sblnewharvesttrail_15 = new L.geoJson(json_sblnewharvesttrail_15, {
+        map.createPane('pane_sbl_new_harvest_trail_15');
+        map.getPane('pane_sbl_new_harvest_trail_15').style.zIndex = 415;
+        map.getPane('pane_sbl_new_harvest_trail_15').style['mix-blend-mode'] = 'normal';
+        var layer_sbl_new_harvest_trail_15 = new L.geoJson(json_sbl_new_harvest_trail_15, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_sblnewharvesttrail_15',
-            layerName: 'layer_sblnewharvesttrail_15',
-            pane: 'pane_sblnewharvesttrail_15',
-            onEachFeature: pop_sblnewharvesttrail_15,
-            style: style_sblnewharvesttrail_15_0,
+            dataVar: 'json_sbl_new_harvest_trail_15',
+            layerName: 'layer_sbl_new_harvest_trail_15',
+            pane: 'pane_sbl_new_harvest_trail_15',
+            onEachFeature: pop_sbl_new_harvest_trail_15,
+            style: style_sbl_new_harvest_trail_15_0,
         });
-        bounds_group.addLayer(layer_sblnewharvesttrail_15);
-        map.addLayer(layer_sblnewharvesttrail_15);
-        function pop_blackfoxredtraileast_16(feature, layer) {
+        bounds_group.addLayer(layer_sbl_new_harvest_trail_15);
+        map.addLayer(layer_sbl_new_harvest_trail_15);
+        function pop_blackfox_red_trail_east_16(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -1121,9 +1120,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_blackfoxredtraileast_16_0() {
+        function style_blackfox_red_trail_east_16_0() {
             return {
-                pane: 'pane_blackfoxredtraileast_16',
+                pane: 'pane_blackfox_red_trail_east_16',
                 opacity: 1,
                 color: 'rgba(180,32,32,0.75)',
                 dashArray: '2.0,4.0',
@@ -1134,21 +1133,21 @@
                 interactive: false,
             }
         }
-        map.createPane('pane_blackfoxredtraileast_16');
-        map.getPane('pane_blackfoxredtraileast_16').style.zIndex = 416;
-        map.getPane('pane_blackfoxredtraileast_16').style['mix-blend-mode'] = 'normal';
-        var layer_blackfoxredtraileast_16 = new L.geoJson(json_blackfoxredtraileast_16, {
+        map.createPane('pane_blackfox_red_trail_east_16');
+        map.getPane('pane_blackfox_red_trail_east_16').style.zIndex = 416;
+        map.getPane('pane_blackfox_red_trail_east_16').style['mix-blend-mode'] = 'normal';
+        var layer_blackfox_red_trail_east_16 = new L.geoJson(json_blackfox_red_trail_east_16, {
             attribution: '',
             interactive: false,
-            dataVar: 'json_blackfoxredtraileast_16',
-            layerName: 'layer_blackfoxredtraileast_16',
-            pane: 'pane_blackfoxredtraileast_16',
-            onEachFeature: pop_blackfoxredtraileast_16,
-            style: style_blackfoxredtraileast_16_0,
+            dataVar: 'json_blackfox_red_trail_east_16',
+            layerName: 'layer_blackfox_red_trail_east_16',
+            pane: 'pane_blackfox_red_trail_east_16',
+            onEachFeature: pop_blackfox_red_trail_east_16,
+            style: style_blackfox_red_trail_east_16_0,
         });
-        bounds_group.addLayer(layer_blackfoxredtraileast_16);
-        map.addLayer(layer_blackfoxredtraileast_16);
-        function pop_blackfoxloop_17(feature, layer) {
+        bounds_group.addLayer(layer_blackfox_red_trail_east_16);
+        map.addLayer(layer_blackfox_red_trail_east_16);
+        function pop_blackfox_loop_17(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -1178,9 +1177,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_blackfoxloop_17_0() {
+        function style_blackfox_loop_17_0() {
             return {
-                pane: 'pane_blackfoxloop_17',
+                pane: 'pane_blackfox_loop_17',
                 opacity: 1,
                 color: 'rgba(70,138,165,1.0)',
                 dashArray: '2.0,4.0',
@@ -1191,21 +1190,21 @@
                 interactive: false,
             }
         }
-        map.createPane('pane_blackfoxloop_17');
-        map.getPane('pane_blackfoxloop_17').style.zIndex = 417;
-        map.getPane('pane_blackfoxloop_17').style['mix-blend-mode'] = 'normal';
-        var layer_blackfoxloop_17 = new L.geoJson(json_blackfoxloop_17, {
+        map.createPane('pane_blackfox_loop_17');
+        map.getPane('pane_blackfox_loop_17').style.zIndex = 417;
+        map.getPane('pane_blackfox_loop_17').style['mix-blend-mode'] = 'normal';
+        var layer_blackfox_loop_17 = new L.geoJson(json_blackfox_loop_17, {
             attribution: '',
             interactive: false,
-            dataVar: 'json_blackfoxloop_17',
-            layerName: 'layer_blackfoxloop_17',
-            pane: 'pane_blackfoxloop_17',
-            onEachFeature: pop_blackfoxloop_17,
-            style: style_blackfoxloop_17_0,
+            dataVar: 'json_blackfox_loop_17',
+            layerName: 'layer_blackfox_loop_17',
+            pane: 'pane_blackfox_loop_17',
+            onEachFeature: pop_blackfox_loop_17,
+            style: style_blackfox_loop_17_0,
         });
-        bounds_group.addLayer(layer_blackfoxloop_17);
-        map.addLayer(layer_blackfoxloop_17);
-        function pop_blackfoxgreentrail_18(feature, layer) {
+        bounds_group.addLayer(layer_blackfox_loop_17);
+        map.addLayer(layer_blackfox_loop_17);
+        function pop_blackfox_green_trail_18(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -1238,9 +1237,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_blackfoxgreentrail_18_0() {
+        function style_blackfox_green_trail_18_0() {
             return {
-                pane: 'pane_blackfoxgreentrail_18',
+                pane: 'pane_blackfox_green_trail_18',
                 opacity: 1,
                 color: 'rgba(47,183,47,1.0)',
                 dashArray: '2.0,4.0',
@@ -1251,21 +1250,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_blackfoxgreentrail_18');
-        map.getPane('pane_blackfoxgreentrail_18').style.zIndex = 418;
-        map.getPane('pane_blackfoxgreentrail_18').style['mix-blend-mode'] = 'normal';
-        var layer_blackfoxgreentrail_18 = new L.geoJson(json_blackfoxgreentrail_18, {
+        map.createPane('pane_blackfox_green_trail_18');
+        map.getPane('pane_blackfox_green_trail_18').style.zIndex = 418;
+        map.getPane('pane_blackfox_green_trail_18').style['mix-blend-mode'] = 'normal';
+        var layer_blackfox_green_trail_18 = new L.geoJson(json_blackfox_green_trail_18, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_blackfoxgreentrail_18',
-            layerName: 'layer_blackfoxgreentrail_18',
-            pane: 'pane_blackfoxgreentrail_18',
-            onEachFeature: pop_blackfoxgreentrail_18,
-            style: style_blackfoxgreentrail_18_0,
+            dataVar: 'json_blackfox_green_trail_18',
+            layerName: 'layer_blackfox_green_trail_18',
+            pane: 'pane_blackfox_green_trail_18',
+            onEachFeature: pop_blackfox_green_trail_18,
+            style: style_blackfox_green_trail_18_0,
         });
-        bounds_group.addLayer(layer_blackfoxgreentrail_18);
-        map.addLayer(layer_blackfoxgreentrail_18);
-        function pop_blackfoxredtrail_19(feature, layer) {
+        bounds_group.addLayer(layer_blackfox_green_trail_18);
+        map.addLayer(layer_blackfox_green_trail_18);
+        function pop_blackfox_red_trail_19(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -1304,9 +1303,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_blackfoxredtrail_19_0() {
+        function style_blackfox_red_trail_19_0() {
             return {
-                pane: 'pane_blackfoxredtrail_19',
+                pane: 'pane_blackfox_red_trail_19',
                 opacity: 1,
                 color: 'rgba(180,32,32,0.75)',
                 dashArray: '2.0,4.0',
@@ -1317,21 +1316,21 @@
                 interactive: false,
             }
         }
-        map.createPane('pane_blackfoxredtrail_19');
-        map.getPane('pane_blackfoxredtrail_19').style.zIndex = 419;
-        map.getPane('pane_blackfoxredtrail_19').style['mix-blend-mode'] = 'normal';
-        var layer_blackfoxredtrail_19 = new L.geoJson(json_blackfoxredtrail_19, {
+        map.createPane('pane_blackfox_red_trail_19');
+        map.getPane('pane_blackfox_red_trail_19').style.zIndex = 419;
+        map.getPane('pane_blackfox_red_trail_19').style['mix-blend-mode'] = 'normal';
+        var layer_blackfox_red_trail_19 = new L.geoJson(json_blackfox_red_trail_19, {
             attribution: '',
             interactive: false,
-            dataVar: 'json_blackfoxredtrail_19',
-            layerName: 'layer_blackfoxredtrail_19',
-            pane: 'pane_blackfoxredtrail_19',
-            onEachFeature: pop_blackfoxredtrail_19,
-            style: style_blackfoxredtrail_19_0,
+            dataVar: 'json_blackfox_red_trail_19',
+            layerName: 'layer_blackfox_red_trail_19',
+            pane: 'pane_blackfox_red_trail_19',
+            onEachFeature: pop_blackfox_red_trail_19,
+            style: style_blackfox_red_trail_19_0,
         });
-        bounds_group.addLayer(layer_blackfoxredtrail_19);
-        map.addLayer(layer_blackfoxredtrail_19);
-        function pop_visionfasttrail_20(feature, layer) {
+        bounds_group.addLayer(layer_blackfox_red_trail_19);
+        map.addLayer(layer_blackfox_red_trail_19);
+        function pop_vision_fast_trail_20(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -1361,9 +1360,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_visionfasttrail_20_0() {
+        function style_vision_fast_trail_20_0() {
             return {
-                pane: 'pane_visionfasttrail_20',
+                pane: 'pane_vision_fast_trail_20',
                 opacity: 1,
                 color: 'rgba(199,60,46,1.0)',
                 dashArray: '2.0,4.0',
@@ -1374,21 +1373,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_visionfasttrail_20');
-        map.getPane('pane_visionfasttrail_20').style.zIndex = 420;
-        map.getPane('pane_visionfasttrail_20').style['mix-blend-mode'] = 'normal';
-        var layer_visionfasttrail_20 = new L.geoJson(json_visionfasttrail_20, {
+        map.createPane('pane_vision_fast_trail_20');
+        map.getPane('pane_vision_fast_trail_20').style.zIndex = 420;
+        map.getPane('pane_vision_fast_trail_20').style['mix-blend-mode'] = 'normal';
+        var layer_vision_fast_trail_20 = new L.geoJson(json_vision_fast_trail_20, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_visionfasttrail_20',
-            layerName: 'layer_visionfasttrail_20',
-            pane: 'pane_visionfasttrail_20',
-            onEachFeature: pop_visionfasttrail_20,
-            style: style_visionfasttrail_20_0,
+            dataVar: 'json_vision_fast_trail_20',
+            layerName: 'layer_vision_fast_trail_20',
+            pane: 'pane_vision_fast_trail_20',
+            onEachFeature: pop_vision_fast_trail_20,
+            style: style_vision_fast_trail_20_0,
         });
-        bounds_group.addLayer(layer_visionfasttrail_20);
-        map.addLayer(layer_visionfasttrail_20);
-        function pop_blackfoxloopexit_21(feature, layer) {
+        bounds_group.addLayer(layer_vision_fast_trail_20);
+        map.addLayer(layer_vision_fast_trail_20);
+        function pop_blackfox_loop_exit_21(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -1427,9 +1426,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_blackfoxloopexit_21_0() {
+        function style_blackfox_loop_exit_21_0() {
             return {
-                pane: 'pane_blackfoxloopexit_21',
+                pane: 'pane_blackfox_loop_exit_21',
                 opacity: 1,
                 color: 'rgba(180,32,32,0.75)',
                 dashArray: '2.0,4.0',
@@ -1440,87 +1439,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_blackfoxloopexit_21');
-        map.getPane('pane_blackfoxloopexit_21').style.zIndex = 421;
-        map.getPane('pane_blackfoxloopexit_21').style['mix-blend-mode'] = 'normal';
-        var layer_blackfoxloopexit_21 = new L.geoJson(json_blackfoxloopexit_21, {
+        map.createPane('pane_blackfox_loop_exit_21');
+        map.getPane('pane_blackfox_loop_exit_21').style.zIndex = 421;
+        map.getPane('pane_blackfox_loop_exit_21').style['mix-blend-mode'] = 'normal';
+        var layer_blackfox_loop_exit_21 = new L.geoJson(json_blackfox_loop_exit_21, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_blackfoxloopexit_21',
-            layerName: 'layer_blackfoxloopexit_21',
-            pane: 'pane_blackfoxloopexit_21',
-            onEachFeature: pop_blackfoxloopexit_21,
-            style: style_blackfoxloopexit_21_0,
+            dataVar: 'json_blackfox_loop_exit_21',
+            layerName: 'layer_blackfox_loop_exit_21',
+            pane: 'pane_blackfox_loop_exit_21',
+            onEachFeature: pop_blackfox_loop_exit_21,
+            style: style_blackfox_loop_exit_21_0,
         });
-        bounds_group.addLayer(layer_blackfoxloopexit_21);
-        map.addLayer(layer_blackfoxloopexit_21);
-        function pop_out_and_back_trail_22(feature, layer) {
-            layer.on({
-                mouseout: function(e) {
-                    for (var i in e.target._eventParents) {
-                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
-                            e.target._eventParents[i].resetStyle(e.target);
-                        }
-                    }
-                    if (typeof layer.closePopup == 'function') {
-                        layer.closePopup();
-                    } else {
-                        layer.eachLayer(function(feature){
-                            feature.closePopup()
-                        });
-                    }
-                },
-                mouseover: highlightFeature,
-            });
-            var popupContent = '<table>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['name'] !== null ? autolinker.link(String(feature.properties['name']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td class="visible-with-data" id="pictureFolder" colspan="2"><strong>pictureFolder</strong><br />' + (feature.properties['pictureFolder'] !== null ? autolinker.link(String(feature.properties['pictureFolder']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td class="visible-with-data" id="created" colspan="2"><strong>created</strong><br />' + (feature.properties['created'] !== null ? autolinker.link(String(feature.properties['created']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['numberOfPoints'] !== null ? autolinker.link(String(feature.properties['numberOfPoints']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                </table>';
-            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
-			layer.on('popupopen', function(e) {
-				addClassToPopupIfMedia(content, e.popup);
-			});
-			layer.bindPopup(content, { maxHeight: 400 });
-        }
-
-        function style_out_and_back_trail_22_0() {
-            return {
-                pane: 'pane_out_and_back_trail_22',
-                opacity: 1,
-                color: 'rgba(180,32,32,0.75)',
-                dashArray: '2.0,4.0',
-                lineCap: 'square',
-                lineJoin: 'bevel',
-                weight: 2.0,
-                fillOpacity: 0,
-                interactive: true,
-            }
-        }
-        map.createPane('pane_out_and_back_trail_22');
-        map.getPane('pane_out_and_back_trail_22').style.zIndex = 422;
-        map.getPane('pane_out_and_back_trail_22').style['mix-blend-mode'] = 'normal';
-        var layer_out_and_back_trail_22 = new L.geoJson(json_out_and_back_trail_22, {
-            attribution: '',
-            interactive: true,
-            dataVar: 'json_out_and_back_trail_22',
-            layerName: 'layer_out_and_back_trail_22',
-            pane: 'pane_out_and_back_trail_22',
-            onEachFeature: pop_out_and_back_trail_22,
-            style: style_out_and_back_trail_22_0,
-        });
-        bounds_group.addLayer(layer_out_and_back_trail_22);
-        map.addLayer(layer_out_and_back_trail_22);
-        function pop_chestnuttrees_23(feature, layer) {
+        bounds_group.addLayer(layer_blackfox_loop_exit_21);
+        map.addLayer(layer_blackfox_loop_exit_21);
+        function pop_chestnuttrees_22(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -1580,9 +1513,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_chestnuttrees_23_0() {
+        function style_chestnuttrees_22_0() {
             return {
-                pane: 'pane_chestnuttrees_23',
+                pane: 'pane_chestnuttrees_22',
                 radius: 2.0,
                 opacity: 1,
                 color: 'rgba(102,102,102,0.5333333333333333)',
@@ -1596,27 +1529,27 @@
                 interactive: false,
             }
         }
-        map.createPane('pane_chestnuttrees_23');
-        map.getPane('pane_chestnuttrees_23').style.zIndex = 423;
-        map.getPane('pane_chestnuttrees_23').style['mix-blend-mode'] = 'normal';
-        var layer_chestnuttrees_23 = new L.geoJson(json_chestnuttrees_23, {
+        map.createPane('pane_chestnuttrees_22');
+        map.getPane('pane_chestnuttrees_22').style.zIndex = 422;
+        map.getPane('pane_chestnuttrees_22').style['mix-blend-mode'] = 'normal';
+        var layer_chestnuttrees_22 = new L.geoJson(json_chestnuttrees_22, {
             attribution: '',
             interactive: false,
-            dataVar: 'json_chestnuttrees_23',
-            layerName: 'layer_chestnuttrees_23',
-            pane: 'pane_chestnuttrees_23',
-            onEachFeature: pop_chestnuttrees_23,
+            dataVar: 'json_chestnuttrees_22',
+            layerName: 'layer_chestnuttrees_22',
+            pane: 'pane_chestnuttrees_22',
+            onEachFeature: pop_chestnuttrees_22,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_chestnuttrees_23_0(feature));
+                return L.circleMarker(latlng, style_chestnuttrees_22_0(feature));
             },
         });
-        bounds_group.addLayer(layer_chestnuttrees_23);
-        map.addLayer(layer_chestnuttrees_23);
-        function pop_pollinatorfield_24(feature, layer) {
+        bounds_group.addLayer(layer_chestnuttrees_22);
+        map.addLayer(layer_chestnuttrees_22);
+        function pop_pollinatorfield_23(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -1652,9 +1585,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_pollinatorfield_24_0() {
+        function style_pollinatorfield_23_0() {
             return {
-                pane: 'pane_pollinatorfield_24',
+                pane: 'pane_pollinatorfield_23',
                 opacity: 1,
                 color: 'rgba(100,152,210,1.0)',
                 dashArray: '',
@@ -1667,21 +1600,21 @@
                 interactive: false,
             }
         }
-        map.createPane('pane_pollinatorfield_24');
-        map.getPane('pane_pollinatorfield_24').style.zIndex = 424;
-        map.getPane('pane_pollinatorfield_24').style['mix-blend-mode'] = 'normal';
-        var layer_pollinatorfield_24 = new L.geoJson(json_pollinatorfield_24, {
+        map.createPane('pane_pollinatorfield_23');
+        map.getPane('pane_pollinatorfield_23').style.zIndex = 423;
+        map.getPane('pane_pollinatorfield_23').style['mix-blend-mode'] = 'normal';
+        var layer_pollinatorfield_23 = new L.geoJson(json_pollinatorfield_23, {
             attribution: '',
             interactive: false,
-            dataVar: 'json_pollinatorfield_24',
-            layerName: 'layer_pollinatorfield_24',
-            pane: 'pane_pollinatorfield_24',
-            onEachFeature: pop_pollinatorfield_24,
-            style: style_pollinatorfield_24_0,
+            dataVar: 'json_pollinatorfield_23',
+            layerName: 'layer_pollinatorfield_23',
+            pane: 'pane_pollinatorfield_23',
+            onEachFeature: pop_pollinatorfield_23,
+            style: style_pollinatorfield_23_0,
         });
-        bounds_group.addLayer(layer_pollinatorfield_24);
-        map.addLayer(layer_pollinatorfield_24);
-        function pop_lower_25(feature, layer) {
+        bounds_group.addLayer(layer_pollinatorfield_23);
+        map.addLayer(layer_pollinatorfield_23);
+        function pop_lower_24(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -1711,9 +1644,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_lower_25_0() {
+        function style_lower_24_0() {
             return {
-                pane: 'pane_lower_25',
+                pane: 'pane_lower_24',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -1726,21 +1659,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_lower_25');
-        map.getPane('pane_lower_25').style.zIndex = 425;
-        map.getPane('pane_lower_25').style['mix-blend-mode'] = 'normal';
-        var layer_lower_25 = new L.geoJson(json_lower_25, {
+        map.createPane('pane_lower_24');
+        map.getPane('pane_lower_24').style.zIndex = 424;
+        map.getPane('pane_lower_24').style['mix-blend-mode'] = 'normal';
+        var layer_lower_24 = new L.geoJson(json_lower_24, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_lower_25',
-            layerName: 'layer_lower_25',
-            pane: 'pane_lower_25',
-            onEachFeature: pop_lower_25,
-            style: style_lower_25_0,
+            dataVar: 'json_lower_24',
+            layerName: 'layer_lower_24',
+            pane: 'pane_lower_24',
+            onEachFeature: pop_lower_24,
+            style: style_lower_24_0,
         });
-        bounds_group.addLayer(layer_lower_25);
-        map.addLayer(layer_lower_25);
-        function pop_upper_26(feature, layer) {
+        bounds_group.addLayer(layer_lower_24);
+        map.addLayer(layer_lower_24);
+        function pop_upper_25(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -1770,9 +1703,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_upper_26_0() {
+        function style_upper_25_0() {
             return {
-                pane: 'pane_upper_26',
+                pane: 'pane_upper_25',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -1785,21 +1718,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_upper_26');
-        map.getPane('pane_upper_26').style.zIndex = 426;
-        map.getPane('pane_upper_26').style['mix-blend-mode'] = 'normal';
-        var layer_upper_26 = new L.geoJson(json_upper_26, {
+        map.createPane('pane_upper_25');
+        map.getPane('pane_upper_25').style.zIndex = 425;
+        map.getPane('pane_upper_25').style['mix-blend-mode'] = 'normal';
+        var layer_upper_25 = new L.geoJson(json_upper_25, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_upper_26',
-            layerName: 'layer_upper_26',
-            pane: 'pane_upper_26',
-            onEachFeature: pop_upper_26,
-            style: style_upper_26_0,
+            dataVar: 'json_upper_25',
+            layerName: 'layer_upper_25',
+            pane: 'pane_upper_25',
+            onEachFeature: pop_upper_25,
+            style: style_upper_25_0,
         });
-        bounds_group.addLayer(layer_upper_26);
-        map.addLayer(layer_upper_26);
-        function pop_pointsofinterest_27(feature, layer) {
+        bounds_group.addLayer(layer_upper_25);
+        map.addLayer(layer_upper_25);
+        function pop_pointsofinterest_26(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -1829,9 +1762,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_pointsofinterest_27_0() {
+        function style_pointsofinterest_26_0() {
             return {
-                pane: 'pane_pointsofinterest_27',
+                pane: 'pane_pointsofinterest_26',
                 radius: 4.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
@@ -1845,27 +1778,27 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_pointsofinterest_27');
-        map.getPane('pane_pointsofinterest_27').style.zIndex = 427;
-        map.getPane('pane_pointsofinterest_27').style['mix-blend-mode'] = 'normal';
-        var layer_pointsofinterest_27 = new L.geoJson(json_pointsofinterest_27, {
+        map.createPane('pane_pointsofinterest_26');
+        map.getPane('pane_pointsofinterest_26').style.zIndex = 426;
+        map.getPane('pane_pointsofinterest_26').style['mix-blend-mode'] = 'normal';
+        var layer_pointsofinterest_26 = new L.geoJson(json_pointsofinterest_26, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_pointsofinterest_27',
-            layerName: 'layer_pointsofinterest_27',
-            pane: 'pane_pointsofinterest_27',
-            onEachFeature: pop_pointsofinterest_27,
+            dataVar: 'json_pointsofinterest_26',
+            layerName: 'layer_pointsofinterest_26',
+            pane: 'pane_pointsofinterest_26',
+            onEachFeature: pop_pointsofinterest_26,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_pointsofinterest_27_0(feature));
+                return L.circleMarker(latlng, style_pointsofinterest_26_0(feature));
             },
         });
-        bounds_group.addLayer(layer_pointsofinterest_27);
-        map.addLayer(layer_pointsofinterest_27);
-        function pop_teaching_garden_28(feature, layer) {
+        bounds_group.addLayer(layer_pointsofinterest_26);
+        map.addLayer(layer_pointsofinterest_26);
+        function pop_teaching_garden_27(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -1961,9 +1894,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_teaching_garden_28_0() {
+        function style_teaching_garden_27_0() {
             return {
-                pane: 'pane_teaching_garden_28',
+                pane: 'pane_teaching_garden_27',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -1976,21 +1909,21 @@
                 interactive: false,
             }
         }
-        map.createPane('pane_teaching_garden_28');
-        map.getPane('pane_teaching_garden_28').style.zIndex = 428;
-        map.getPane('pane_teaching_garden_28').style['mix-blend-mode'] = 'normal';
-        var layer_teaching_garden_28 = new L.geoJson(json_teaching_garden_28, {
+        map.createPane('pane_teaching_garden_27');
+        map.getPane('pane_teaching_garden_27').style.zIndex = 427;
+        map.getPane('pane_teaching_garden_27').style['mix-blend-mode'] = 'normal';
+        var layer_teaching_garden_27 = new L.geoJson(json_teaching_garden_27, {
             attribution: '',
             interactive: false,
-            dataVar: 'json_teaching_garden_28',
-            layerName: 'layer_teaching_garden_28',
-            pane: 'pane_teaching_garden_28',
-            onEachFeature: pop_teaching_garden_28,
-            style: style_teaching_garden_28_0,
+            dataVar: 'json_teaching_garden_27',
+            layerName: 'layer_teaching_garden_27',
+            pane: 'pane_teaching_garden_27',
+            onEachFeature: pop_teaching_garden_27,
+            style: style_teaching_garden_27_0,
         });
-        bounds_group.addLayer(layer_teaching_garden_28);
-        map.addLayer(layer_teaching_garden_28);
-        function pop_buildings_29(feature, layer) {
+        bounds_group.addLayer(layer_teaching_garden_27);
+        map.addLayer(layer_teaching_garden_27);
+        function pop_buildings_28(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -2020,9 +1953,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_buildings_29_0() {
+        function style_buildings_28_0() {
             return {
-                pane: 'pane_buildings_29',
+                pane: 'pane_buildings_28',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -2035,21 +1968,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_buildings_29');
-        map.getPane('pane_buildings_29').style.zIndex = 429;
-        map.getPane('pane_buildings_29').style['mix-blend-mode'] = 'normal';
-        var layer_buildings_29 = new L.geoJson(json_buildings_29, {
+        map.createPane('pane_buildings_28');
+        map.getPane('pane_buildings_28').style.zIndex = 428;
+        map.getPane('pane_buildings_28').style['mix-blend-mode'] = 'normal';
+        var layer_buildings_28 = new L.geoJson(json_buildings_28, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_buildings_29',
-            layerName: 'layer_buildings_29',
-            pane: 'pane_buildings_29',
-            onEachFeature: pop_buildings_29,
-            style: style_buildings_29_0,
+            dataVar: 'json_buildings_28',
+            layerName: 'layer_buildings_28',
+            pane: 'pane_buildings_28',
+            onEachFeature: pop_buildings_28,
+            style: style_buildings_28_0,
         });
-        bounds_group.addLayer(layer_buildings_29);
-        map.addLayer(layer_buildings_29);
-        function pop_roads_30(feature, layer) {
+        bounds_group.addLayer(layer_buildings_28);
+        map.addLayer(layer_buildings_28);
+        function pop_roads_29(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -2082,27 +2015,27 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_roads_30_0() {
+        function style_roads_29_0() {
             return {
-                pane: 'pane_roads_30',
+                pane: 'pane_roads_29',
                 interactive: false,
             }
         }
-        map.createPane('pane_roads_30');
-        map.getPane('pane_roads_30').style.zIndex = 430;
-        map.getPane('pane_roads_30').style['mix-blend-mode'] = 'normal';
-        var layer_roads_30 = new L.geoJson(json_roads_30, {
+        map.createPane('pane_roads_29');
+        map.getPane('pane_roads_29').style.zIndex = 429;
+        map.getPane('pane_roads_29').style['mix-blend-mode'] = 'normal';
+        var layer_roads_29 = new L.geoJson(json_roads_29, {
             attribution: '',
             interactive: false,
-            dataVar: 'json_roads_30',
-            layerName: 'layer_roads_30',
-            pane: 'pane_roads_30',
-            onEachFeature: pop_roads_30,
-            style: style_roads_30_0,
+            dataVar: 'json_roads_29',
+            layerName: 'layer_roads_29',
+            pane: 'pane_roads_29',
+            onEachFeature: pop_roads_29,
+            style: style_roads_29_0,
         });
-        bounds_group.addLayer(layer_roads_30);
-        map.addLayer(layer_roads_30);
-        function pop_parking_31(feature, layer) {
+        bounds_group.addLayer(layer_roads_29);
+        map.addLayer(layer_roads_29);
+        function pop_parking_30(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -2129,38 +2062,38 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_parking_31_0() {
+        function style_parking_30_0() {
             return {
-                pane: 'pane_parking_31',
+                pane: 'pane_parking_30',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/parking_31.svg',
+            iconUrl: 'markers/parking_30.svg',
             iconSize: [11.399999999999999, 11.399999999999999]
         }),
                 interactive: true,
             }
         }
-        map.createPane('pane_parking_31');
-        map.getPane('pane_parking_31').style.zIndex = 431;
-        map.getPane('pane_parking_31').style['mix-blend-mode'] = 'normal';
-        var layer_parking_31 = new L.geoJson(json_parking_31, {
+        map.createPane('pane_parking_30');
+        map.getPane('pane_parking_30').style.zIndex = 430;
+        map.getPane('pane_parking_30').style['mix-blend-mode'] = 'normal';
+        var layer_parking_30 = new L.geoJson(json_parking_30, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_parking_31',
-            layerName: 'layer_parking_31',
-            pane: 'pane_parking_31',
-            onEachFeature: pop_parking_31,
+            dataVar: 'json_parking_30',
+            layerName: 'layer_parking_30',
+            pane: 'pane_parking_30',
+            onEachFeature: pop_parking_30,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_parking_31_0(feature));
+                return L.marker(latlng, style_parking_30_0(feature));
             },
         });
-        bounds_group.addLayer(layer_parking_31);
-        map.addLayer(layer_parking_31);
+        bounds_group.addLayer(layer_parking_30);
+        map.addLayer(layer_parking_30);
         map.on("zoomend", function(e) {
             if (map.getZoom() <= 15 && map.getZoom() >= 10) {
                 map.addLayer(layer_USGSTopographicMaps_2);
@@ -2168,19 +2101,19 @@
                 map.removeLayer(layer_USGSTopographicMaps_2);
             }
             if (map.getZoom() <= 19 && map.getZoom() >= 2) {
-                map.addLayer(layer_chestnuttrees_23);
+                map.addLayer(layer_chestnuttrees_22);
             } else if (map.getZoom() > 19 || map.getZoom() < 2) {
-                map.removeLayer(layer_chestnuttrees_23);
+                map.removeLayer(layer_chestnuttrees_22);
             }
             if (map.getZoom() <= 19 && map.getZoom() >= 2) {
-                map.addLayer(layer_roads_30);
+                map.addLayer(layer_roads_29);
             } else if (map.getZoom() > 19 || map.getZoom() < 2) {
-                map.removeLayer(layer_roads_30);
+                map.removeLayer(layer_roads_29);
             }
             if (map.getZoom() <= 19 && map.getZoom() >= 2) {
-                map.addLayer(layer_parking_31);
+                map.addLayer(layer_parking_30);
             } else if (map.getZoom() > 19 || map.getZoom() < 2) {
-                map.removeLayer(layer_parking_31);
+                map.removeLayer(layer_parking_30);
             }
         });
             if (map.getZoom() <= 15 && map.getZoom() >= 10) {
@@ -2189,51 +2122,50 @@
                 map.removeLayer(layer_USGSTopographicMaps_2);
             }
             if (map.getZoom() <= 19 && map.getZoom() >= 2) {
-                map.addLayer(layer_chestnuttrees_23);
+                map.addLayer(layer_chestnuttrees_22);
             } else if (map.getZoom() > 19 || map.getZoom() < 2) {
-                map.removeLayer(layer_chestnuttrees_23);
+                map.removeLayer(layer_chestnuttrees_22);
             }
             if (map.getZoom() <= 19 && map.getZoom() >= 2) {
-                map.addLayer(layer_roads_30);
+                map.addLayer(layer_roads_29);
             } else if (map.getZoom() > 19 || map.getZoom() < 2) {
-                map.removeLayer(layer_roads_30);
+                map.removeLayer(layer_roads_29);
             }
             if (map.getZoom() <= 19 && map.getZoom() >= 2) {
-                map.addLayer(layer_parking_31);
+                map.addLayer(layer_parking_30);
             } else if (map.getZoom() > 19 || map.getZoom() < 2) {
-                map.removeLayer(layer_parking_31);
+                map.removeLayer(layer_parking_30);
             }
         var overlaysTree = [
-            {label: '<img src="legend/parking_31.png" /> parking', layer: layer_parking_31},
-            {label: '<img src="legend/roads_30.png" /> roads', layer: layer_roads_30},
-            {label: '<img src="legend/buildings_29.png" /> buildings', layer: layer_buildings_29},
-            {label: '<img src="legend/teaching_garden_28.png" /> teaching_garden', layer: layer_teaching_garden_28},
-            {label: '<img src="legend/pointsofinterest_27.png" /> points of interest', layer: layer_pointsofinterest_27},
-        {label: '<b>natural burial preserve</b>', collapsed: true, selectAllCheckbox: true, children: [
-            {label: '<img src="legend/upper_26.png" /> upper', layer: layer_upper_26},
-            {label: '<img src="legend/lower_25.png" /> lower', layer: layer_lower_25},]},
-        {label: '<b>stewardship projects</b>', collapsed: true, selectAllCheckbox: true, children: [
-            {label: '<img src="legend/pollinatorfield_24.png" /> pollinator field', layer: layer_pollinatorfield_24},
-            {label: '<img src="legend/chestnuttrees_23.png" /> chestnut trees', layer: layer_chestnuttrees_23},]},
-        {label: '<b>trails</b>', collapsed: true, selectAllCheckbox: true, children: [
-            {label: '<img src="legend/out_and_back_trail_22.png" /> out_and_back_trail', layer: layer_out_and_back_trail_22},
-            {label: '<img src="legend/blackfoxloopexit_21.png" /> blackfox loop exit', layer: layer_blackfoxloopexit_21},
-            {label: '<img src="legend/visionfasttrail_20.png" /> vision fast trail', layer: layer_visionfasttrail_20},
-            {label: '<img src="legend/blackfoxredtrail_19.png" /> blackfox red trail', layer: layer_blackfoxredtrail_19},
-            {label: '<img src="legend/blackfoxgreentrail_18.png" /> blackfox green trail', layer: layer_blackfoxgreentrail_18},
-            {label: '<img src="legend/blackfoxloop_17.png" /> blackfox loop', layer: layer_blackfoxloop_17},
-            {label: '<img src="legend/blackfoxredtraileast_16.png" /> blackfox red trail east', layer: layer_blackfoxredtraileast_16},
-            {label: '<img src="legend/sblnewharvesttrail_15.png" /> sbl new harvest trail', layer: layer_sblnewharvesttrail_15},]},
-        {label: '<b>pilot trails</b>', collapsed: true, selectAllCheckbox: true, children: [
+            {label: '<img src="legend/parking_30.png" /> parking', layer: layer_parking_30},
+            {label: '<img src="legend/roads_29.png" /> roads', layer: layer_roads_29},
+            {label: '<img src="legend/buildings_28.png" /> buildings', layer: layer_buildings_28},
+            {label: '<img src="legend/teaching_garden_27.png" /> teaching_garden', layer: layer_teaching_garden_27},
+            {label: '<img src="legend/pointsofinterest_26.png" /> points of interest', layer: layer_pointsofinterest_26},
+        {label: '<b>natural burial preserve</b>',  selectAllCheckbox: true, children: [
+            {label: '<img src="legend/upper_25.png" /> upper', layer: layer_upper_25},
+            {label: '<img src="legend/lower_24.png" /> lower', layer: layer_lower_24},]},
+        {label: '<b>stewardship projects</b>',  selectAllCheckbox: true, children: [
+            {label: '<img src="legend/pollinatorfield_23.png" /> pollinator field', layer: layer_pollinatorfield_23},
+            {label: '<img src="legend/chestnuttrees_22.png" /> chestnut trees', layer: layer_chestnuttrees_22},]},
+        {label: '<b>trails</b>',  selectAllCheckbox: true, children: [
+            {label: '<img src="legend/blackfox_loop_exit_21.png" /> blackfox_loop_exit', layer: layer_blackfox_loop_exit_21},
+            {label: '<img src="legend/vision_fast_trail_20.png" /> vision_fast_trail', layer: layer_vision_fast_trail_20},
+            {label: '<img src="legend/blackfox_red_trail_19.png" /> blackfox_red_trail', layer: layer_blackfox_red_trail_19},
+            {label: '<img src="legend/blackfox_green_trail_18.png" /> blackfox_green_trail', layer: layer_blackfox_green_trail_18},
+            {label: '<img src="legend/blackfox_loop_17.png" /> blackfox_loop', layer: layer_blackfox_loop_17},
+            {label: '<img src="legend/blackfox_red_trail_east_16.png" /> blackfox_red_trail_east', layer: layer_blackfox_red_trail_east_16},
+            {label: '<img src="legend/sbl_new_harvest_trail_15.png" /> sbl_new_harvest_trail', layer: layer_sbl_new_harvest_trail_15},]},
+        {label: '<b>pilot trails</b>',  selectAllCheckbox: true, children: [
             {label: '<img src="legend/lower_pilot_trail_14.png" /> lower_pilot_trail', layer: layer_lower_pilot_trail_14},
-            {label: '<img src="legend/outandback_13.png" /> out and back', layer: layer_outandback_13},
-            {label: '<img src="legend/upperpilottrail_12.png" /> upper pilot trail', layer: layer_upperpilottrail_12},
-            {label: '<img src="legend/gardeninterntrail_11.png" /> garden intern trail', layer: layer_gardeninterntrail_11},]},
+            {label: '<img src="legend/out_and_back_13.png" /> out_and_back', layer: layer_out_and_back_13},
+            {label: '<img src="legend/upper_pilot_trail_12.png" /> upper_pilot_trail', layer: layer_upper_pilot_trail_12},
+            {label: '<img src="legend/garden_intern_trail_11.png" /> garden_intern_trail', layer: layer_garden_intern_trail_11},]},
         {label: '<b>nr parcels</b>',  selectAllCheckbox: true, children: [
             {label: '<img src="legend/nrparcels_10.png" /> nr parcels', layer: layer_nrparcels_10},
             {label: '<img src="legend/loghouse_9.png" /> log house', layer: layer_loghouse_9},
             {label: '<img src="legend/grainger_8.png" /> grainger', layer: layer_grainger_8},]},
-        {label: '<b>lease sites</b>', collapsed: true, selectAllCheckbox: true, children: [
+        {label: '<b>lease sites</b>',  selectAllCheckbox: true, children: [
             {label: '<img src="legend/nicely_7.png" /> nicely', layer: layer_nicely_7},
             {label: '<img src="legend/littleridge_6.png" /> little ridge', layer: layer_littleridge_6},
             {label: '<img src="legend/blackfox_5.png" /> blackfox', layer: layer_blackfox_5},
@@ -2255,13 +2187,13 @@
         lay.addTo(map);
         map.on("zoomend", function(){
 
-                if (map.hasLayer(layer_pointsofinterest_27)) {
+                if (map.hasLayer(layer_pointsofinterest_26)) {
                     if (map.getZoom() <= 19 && map.getZoom() >= 19) {
-                        layer_pointsofinterest_27.eachLayer(function (layer) {
+                        layer_pointsofinterest_26.eachLayer(function (layer) {
                             layer.openTooltip();
                         });
                     } else {
-                        layer_pointsofinterest_27.eachLayer(function (layer) {
+                        layer_pointsofinterest_26.eachLayer(function (layer) {
                             layer.closeTooltip();
                         });
                     }
@@ -2269,12 +2201,12 @@
         });
         setBounds();
         var i = 0;
-        layer_grainger_8.eachLayer(function(layer) {
+        layer_lower_24.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['DISPLAY_AC'] !== null?String('<div style="color: #323232; font-size: 10pt; font-family: \'Liberation Sans\', sans-serif;">' + layer.feature.properties['DISPLAY_AC']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_grainger_8'});
+            layer.bindTooltip((layer.feature.properties['site_number'] !== null?String('<div style="color: #323232; font-size: 10pt; font-family: \'Liberation Sans\', sans-serif;">' + layer.feature.properties['site_number']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_lower_24'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -2282,51 +2214,38 @@
               i++;
         });
         var i = 0;
-        layer_lower_25.eachLayer(function(layer) {
+        layer_upper_25.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['site_number'] !== null?String('<div style="color: #323232; font-size: 10pt; font-family: \'Liberation Sans\', sans-serif;">' + layer.feature.properties['site_number']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_lower_25'});
+            layer.bindTooltip((layer.feature.properties['number'] !== null?String('<div style="color: #323232; font-size: 10pt; font-family: \'Liberation Sans\', sans-serif;">' + layer.feature.properties['number']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_upper_25'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
               addLabel(layer, i);
               i++;
         });
-        var i = 0;
-        layer_upper_26.eachLayer(function(layer) {
-            var context = {
-                feature: layer.feature,
-                variables: {}
-            };
-            layer.bindTooltip((layer.feature.properties['number'] !== null?String('<div style="color: #323232; font-size: 10pt; font-family: \'Liberation Sans\', sans-serif;">' + layer.feature.properties['number']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_upper_26'});
-            labels.push(layer);
-            totalMarkers += 1;
-              layer.added = true;
-              addLabel(layer, i);
-              i++;
-        });
-                if (map.hasLayer(layer_pointsofinterest_27)) {
+                if (map.hasLayer(layer_pointsofinterest_26)) {
                     if (map.getZoom() <= 19 && map.getZoom() >= 19) {
-                        layer_pointsofinterest_27.eachLayer(function (layer) {
+                        layer_pointsofinterest_26.eachLayer(function (layer) {
                             layer.openTooltip();
                         });
                     } else {
-                        layer_pointsofinterest_27.eachLayer(function (layer) {
+                        layer_pointsofinterest_26.eachLayer(function (layer) {
                             layer.closeTooltip();
                         });
                     }
                 }
-        resetLabels([layer_hvla_3,layer_nr1_4,layer_blackfox_5,layer_littleridge_6,layer_nicely_7,layer_grainger_8,layer_loghouse_9,layer_nrparcels_10,layer_pollinatorfield_24,layer_lower_25,layer_upper_26,layer_pointsofinterest_27,layer_teaching_garden_28]);
+        resetLabels([layer_hvla_3,layer_nr1_4,layer_blackfox_5,layer_littleridge_6,layer_nicely_7,layer_loghouse_9,layer_nrparcels_10,layer_pollinatorfield_23,layer_lower_24,layer_upper_25,layer_pointsofinterest_26,layer_teaching_garden_27]);
         map.on("zoomend", function(){
-            resetLabels([layer_hvla_3,layer_nr1_4,layer_blackfox_5,layer_littleridge_6,layer_nicely_7,layer_grainger_8,layer_loghouse_9,layer_nrparcels_10,layer_pollinatorfield_24,layer_lower_25,layer_upper_26,layer_pointsofinterest_27,layer_teaching_garden_28]);
+            resetLabels([layer_hvla_3,layer_nr1_4,layer_blackfox_5,layer_littleridge_6,layer_nicely_7,layer_loghouse_9,layer_nrparcels_10,layer_pollinatorfield_23,layer_lower_24,layer_upper_25,layer_pointsofinterest_26,layer_teaching_garden_27]);
         });
         map.on("layeradd", function(){
-            resetLabels([layer_hvla_3,layer_nr1_4,layer_blackfox_5,layer_littleridge_6,layer_nicely_7,layer_grainger_8,layer_loghouse_9,layer_nrparcels_10,layer_pollinatorfield_24,layer_lower_25,layer_upper_26,layer_pointsofinterest_27,layer_teaching_garden_28]);
+            resetLabels([layer_hvla_3,layer_nr1_4,layer_blackfox_5,layer_littleridge_6,layer_nicely_7,layer_loghouse_9,layer_nrparcels_10,layer_pollinatorfield_23,layer_lower_24,layer_upper_25,layer_pointsofinterest_26,layer_teaching_garden_27]);
         });
         map.on("layerremove", function(){
-            resetLabels([layer_hvla_3,layer_nr1_4,layer_blackfox_5,layer_littleridge_6,layer_nicely_7,layer_grainger_8,layer_loghouse_9,layer_nrparcels_10,layer_pollinatorfield_24,layer_lower_25,layer_upper_26,layer_pointsofinterest_27,layer_teaching_garden_28]);
+            resetLabels([layer_hvla_3,layer_nr1_4,layer_blackfox_5,layer_littleridge_6,layer_nicely_7,layer_loghouse_9,layer_nrparcels_10,layer_pollinatorfield_23,layer_lower_24,layer_upper_25,layer_pointsofinterest_26,layer_teaching_garden_27]);
         });
         </script>        
     </body>
